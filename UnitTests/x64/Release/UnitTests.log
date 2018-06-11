@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  unittest1.cpp
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(19): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+  c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(37): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "ds::FixedSizeArray<t_size,t_tau>", die kompiliert wird.
+LINK : warning LNK4075: /INCREMENTAL wird aufgrund der Angabe von /LTCG ignoriert.
+     Bibliothek "C:\Users\PhilippKroll\Source\Repos\Sudoku\x64\Release\UnitTests.lib" und Objekt "C:\Users\PhilippKroll\Source\Repos\Sudoku\x64\Release\UnitTests.exp" werden erstellt.
+  Code wird generiert.
+  All 127 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Codegenerierung ist abgeschlossen.
+  UnitTests.vcxproj -> C:\Users\PhilippKroll\Source\Repos\Sudoku\x64\Release\UnitTests.dll

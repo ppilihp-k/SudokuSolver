@@ -32,6 +32,8 @@
 #define cast128(x) (((__uint128_t)x))
 #endif
 
+#define CACHE_LINE_ALIGNMENT 16
+
 // Check windows
 #if _WIN32 || _WIN64
 	#if _WIN64
@@ -56,8 +58,8 @@
 	#define integer uint32_t 
 #endif
 
-#define mod64mask (Integer(64) - Integer(1))
-#define mod32mask (Integer(32) - Integer(1))
+#define mod64mask Integer(63)
+#define mod32mask Integer(31)
 
 namespace ds
 {

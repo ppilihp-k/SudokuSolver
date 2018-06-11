@@ -1,0 +1,20 @@
+﻿  stdafx.cpp
+  SudokuApp.cpp
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(19): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+  c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(37): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "ds::FixedSizeArray<t_size,t_tau>", die kompiliert wird.
+SudokuApp.cpp(34): warning C4297: "getInt": Die Funktion löst eine unerwartete Ausnahme aus
+  SudokuApp.cpp(34): note: __declspec(nothrow), throw(), noexcept(true) oder noexcept wurde für die Funktion angegeben
+SudokuApp.cpp(53): warning C4101: "n": Unreferenzierte lokale Variable
+c:\users\philippkroll\source\repos\sudoku\sudokuapp\../SudokuLib/Sudoku.h(160): warning C4244: "=": Konvertierung von "__int64" in "double", möglicher Datenverlust
+  c:\users\philippkroll\source\repos\sudoku\sudokuapp\../SudokuLib/Sudoku.h(151): note: Bei der Kompilierung von Klasse Vorlage der Report Sudoku<9,4>::solve(void)-Memberfunktion
+  SudokuApp.cpp(150): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-Vorlage "Report Sudoku<9,4>::solve(void)".
+  SudokuApp.cpp(108): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "Sudoku<9,4>", die kompiliert wird.
+c:\users\philippkroll\source\repos\sudoku\sudokuapp\../SudokuLib/Sudoku.h(129): warning C4101: "s": Unreferenzierte lokale Variable
+  c:\users\philippkroll\source\repos\sudoku\sudokuapp\../SudokuLib/Sudoku.h(112): note: Bei der Kompilierung von Klasse Vorlage der bool Sudoku<9,4>::solve(uint32_t,uint32_t,Report &)-Memberfunktion
+  c:\users\philippkroll\source\repos\sudoku\sudokuapp\../SudokuLib/Sudoku.h(157): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-Vorlage "bool Sudoku<9,4>::solve(uint32_t,uint32_t,Report &)".
+  c:\users\philippkroll\source\repos\sudoku\sudokuapp\../SudokuLib/Sudoku.h(151): note: Bei der Kompilierung von Klasse Vorlage der Report Sudoku<9,4>::solve(void)-Memberfunktion
+  SudokuApp.cpp(150): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Funktions-Vorlage "Report Sudoku<9,4>::solve(void)".
+  Code wird generiert.
+  All 254 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Codegenerierung ist abgeschlossen.
+  SudokuApp.vcxproj -> C:\Users\PhilippKroll\Source\Repos\Sudoku\x64\Release\SudokuApp.exe

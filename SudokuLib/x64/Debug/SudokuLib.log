@@ -1,0 +1,28 @@
+﻿  stdafx.cpp
+  Sudoku.cpp
+c:\users\philippkroll\source\repos\sudoku\sudokulib\bitmanipulation.h(70): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\bitmanipulation.h(78): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(12): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(24): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+  c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(42): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "ds::FixedSizeArray<t_size,t_tau>", die kompiliert wird.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(47): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(77): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(104): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(136): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+  array.cpp
+c:\users\philippkroll\source\repos\sudoku\sudokulib\bitmanipulation.h(70): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\bitmanipulation.h(78): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(12): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(24): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+  c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(42): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "ds::FixedSizeArray<t_size,t_tau>", die kompiliert wird.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(47): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(77): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(104): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(136): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.cpp(13): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.cpp(43): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.cpp(67): warning C4244: "Argument": Konvertierung von "const uint64_t" in "uint8_t", möglicher Datenverlust
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.cpp(74): warning C4244: "Argument": Konvertierung von "uint64_t" in "uint8_t", möglicher Datenverlust
+  allocator.cpp
+  Code wird generiert...
+  SudokuLib.vcxproj -> C:\Users\PhilippKroll\Source\Repos\Sudoku\x64\Debug\SudokuLib.lib

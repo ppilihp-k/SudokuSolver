@@ -1,0 +1,13 @@
+﻿  stdafx.cpp
+  unittest1.cpp
+c:\users\philippkroll\source\repos\sudoku\sudokulib\bitmanipulation.h(70): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\bitmanipulation.h(78): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(12): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(24): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+  c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(42): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "ds::FixedSizeArray<t_size,t_tau>", die kompiliert wird.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(47): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(77): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(104): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(136): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+     Bibliothek "C:\Users\PhilippKroll\Source\Repos\Sudoku\x64\Debug\UnitTests.lib" und Objekt "C:\Users\PhilippKroll\Source\Repos\Sudoku\x64\Debug\UnitTests.exp" werden erstellt.
+  UnitTests.vcxproj -> C:\Users\PhilippKroll\Source\Repos\Sudoku\x64\Debug\UnitTests.dll

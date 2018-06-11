@@ -3,15 +3,20 @@
 #define __ARRAY_H__
 
 #include "bitmanipulation.h"
+#include <mutex>
 
 namespace ds
 {
 	template<Integer t_size, Integer t_tau>
-	class FixedSizeArray
+	class 
+#ifdef _WIN32 || _WIN64
+		__declspec(align(CACHE_LINE_ALIGNMENT))
+#endif
+	FixedSizeArray
 	{
 	private:
-		Integer m_length;
 		Integer m_content[t_size];
+		Integer m_length;
 	public:
 		FixedSizeArray()
 		{
@@ -36,8 +41,43 @@ namespace ds
 		Integer byteSize() const { return sizeof(*this); };
 	};
 
+
 	template<Integer t_size, Integer t_tau>
-	class FixedSizeArray2D
+	class 
+#ifdef _WIN32 || _WIN64
+		__declspec(align(CACHE_LINE_ALIGNMENT))
+#endif	
+	FixedSizeArray_TS
+	{
+	private:
+		FixedSizeArray<t_size, t_tau> m_content;
+		std::mutex m_mutex;
+	public:
+		FixedSizeArray_TS() { m_mutex = std::mutex(true); };
+		~FixedSizeArray_TS() {};
+		FixedSizeArray_TS(const FixedSizeArray_TS<t_size, t_tau>& other) { *this = other; };
+		FixedSizeArray_TS(FixedSizeArray_TS<t_size, t_tau>&& other) { *this = other; };
+		FixedSizeArray_TS& operator=(const FixedSizeArray_TS<t_size, t_tau>& other)
+		{
+			m_mutex.lock();
+			m_length = other.m_length;
+			for (Integer i = 0; i < t_size; i++) m_content[i] = other.m_content[i];
+			m_mutex.unlock();
+		};
+		Integer operator[](Integer i) const { m_mutex.lock(); Integer result = m_content.get(i); m_mutex.unlock(); return result; };
+		void set(Integer i, Integer value) { m_mutex.lock(); m_content.set(i, value); m_mutex.unlock(); };
+		Integer get(Integer i) const { return operator[](i); };
+		Integer length() const { return m_length; };
+		Integer tau() const { return t_tau; };
+		Integer byteSize() const { return sizeof(*this); };		
+	};
+
+	template<Integer t_size, Integer t_tau>
+	class 
+#ifdef _WIN32 || _WIN64
+		__declspec(align(CACHE_LINE_ALIGNMENT))
+#endif	
+	FixedSizeArray2D
 	{
 	private:
 		FixedSizeArray<t_size * t_size, t_tau> m_content;
@@ -60,7 +100,11 @@ namespace ds
 	One dimensional array of length size with tau bit for each element.
 	All elements reside in the same memoryspace.
 	*/
-	class Array
+	class
+#ifdef _WIN32 || _WIN64
+		__declspec(align(CACHE_LINE_ALIGNMENT))
+#endif	
+	Array
 	{
 	private:
 		Integer m_tau;
@@ -88,12 +132,16 @@ namespace ds
 	/**
 	2-dimensional array with width * height elements, where each element is of bitlength tau.
 	*/
-	class Array2D
+	class 
+#ifdef _WIN32 || _WIN64
+		__declspec(align(CACHE_LINE_ALIGNMENT))
+#endif	
+	Array2D
 	{
 	private:
+		Array m_content;
 		Integer m_width;
 		Integer m_height;
-		Array m_content;
 	public:
 		Array2D(Integer width, Integer height, Integer tau);
 		~Array2D();

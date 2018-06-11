@@ -1,0 +1,11 @@
+﻿  stdafx.cpp
+  allocator.cpp
+  array.cpp
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(19): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+  c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(37): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "ds::FixedSizeArray<t_size,t_tau>", die kompiliert wird.
+array.cpp(13): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+array.cpp(43): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+  Sudoku.cpp
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(19): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+  c:\users\philippkroll\source\repos\sudoku\sudokulib\array.h(37): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "ds::FixedSizeArray<t_size,t_tau>", die kompiliert wird.
+  SudokuLib.vcxproj -> C:\Users\PhilippKroll\Source\Repos\Sudoku\x64\Release\SudokuLib.lib

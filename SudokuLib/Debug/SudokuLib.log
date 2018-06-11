@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+  Sudoku.cpp
+  array.cpp
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.cpp(13): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+c:\users\philippkroll\source\repos\sudoku\sudokulib\array.cpp(43): warning C4083: "(" erwartet; Bezeichner "count" gefunden
+  Code wird generiert...
+  SudokuLib.vcxproj -> C:\Users\PhilippKroll\Source\Repos\Sudoku\Debug\SudokuLib.lib

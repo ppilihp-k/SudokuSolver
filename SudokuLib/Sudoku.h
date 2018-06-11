@@ -3,6 +3,8 @@
 #include "array.h"
 #include <string>
 #include <chrono>
+#include <intrin.h>
+#include <immintrin.h>
 
 class Report
 {
@@ -114,6 +116,9 @@ inline bool Sudoku<t_length, t_tau>::solve(uint32_t i, uint32_t j, Report & repo
 	{
 		return test(report);
 	}
+	_mm_prefetch((const char*)&m_columns[i], 1);
+	_mm_prefetch((const char*)&m_rows[j], 1);
+	_mm_prefetch((const char*)&m_blocks[quadrant(i, j)], 1);
 
 	/*rekursion*/
 	std::pair<uint32_t, uint32_t> ni = nextIndex(i, j);

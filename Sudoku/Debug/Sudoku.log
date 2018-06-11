@@ -1,0 +1,9 @@
+﻿  stdafx.cpp
+  sudoku_main.cpp
+sudoku_main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: unsigned int __thiscall ds::Array2D::height(void)const " (?height@Array2D@ds@@QBEIXZ)" in Funktion "_main".
+sudoku_main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: __thiscall Sudoku::Sudoku(unsigned int)" (??0Sudoku@@QAE@I@Z)" in Funktion "_main".
+sudoku_main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: __thiscall Sudoku::~Sudoku(void)" (??1Sudoku@@QAE@XZ)" in Funktion "_main".
+sudoku_main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: void __thiscall Sudoku::setSudokuValue(unsigned int,unsigned int,unsigned int)" (?setSudokuValue@Sudoku@@QAEXIII@Z)" in Funktion "_main".
+sudoku_main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: class Report __thiscall Sudoku::solve(void)" (?solve@Sudoku@@QAE?AVReport@@XZ)" in Funktion "_main".
+sudoku_main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall Sudoku::toString(void)const " (?toString@Sudoku@@QBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ)" in Funktion "_main".
+C:\Users\PhilippKroll\Source\Repos\Sudoku\Debug\Sudoku.exe : fatal error LNK1120: 6 nicht aufgelöste Externe
